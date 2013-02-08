@@ -1,0 +1,16 @@
+2013/02/08 22:41:17 [error] [php] file_get_contents(/home/zenxds/php/weibo/protected/templates/index.html): failed to open stream: No such file or directory (/home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php:48)
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/components/Controller.php(29): MustacheApplicationComponent->render()
+#1 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): SiteController->render()
+#2 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /home/zenxds/php/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /home/zenxds/php/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/zenxds/php/weibo/index.php(13): CWebApplication->run()
+REQUEST_URI=/weibo/index.php?r=site/index
+in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (48)
+in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (28)
+in /home/zenxds/php/weibo/protected/components/Controller.php (29)

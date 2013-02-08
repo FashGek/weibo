@@ -27,9 +27,17 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$test_data = array (
+		    "name" => "Chris",
+		    "value" => 10000,
+		    "taxed_value" => 10000 - (10000 * 0.4),
+		    "in_ca" => true
+		);
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('index', array(
+			"test_data" => $test_data
+		));
 	}
 
 	/**
