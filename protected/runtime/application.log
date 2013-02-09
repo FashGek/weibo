@@ -14,3 +14,915 @@ REQUEST_URI=/weibo/index.php?r=site/index
 in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (48)
 in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (28)
 in /home/zenxds/php/weibo/protected/components/Controller.php (29)
+2013/02/09 12:22:39 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/
+---
+2013/02/09 12:22:40 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:23:18 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:23:18 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:23:44 [error] [exception.CException] exception 'CException' with message 'Alias "com.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('com.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:23:45 [error] [exception.CException] exception 'CException' with message 'Alias "com.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('com.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:24:36 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ARedisConnection" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/zenxds/php/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('application.com...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:24:37 [error] [exception.CException] exception 'CException' with message 'Alias "application.components.ARedisConnection" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/zenxds/php/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('application.com...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:27:50 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:27:51 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:27:51 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:28:12 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:28:13 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:28:13 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:28:14 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:28:14 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:21 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:22 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:22 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:23 [error] [exception.CException] exception 'CException' with message 'Alias "packages.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.YiiRed...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:41 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:41 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:42 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:42 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:42 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:29:42 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:31:53 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:31:54 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:31:54 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:32:23 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:32:23 [error] [exception.CException] exception 'CException' with message 'Alias "packages.redis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('packages.redis....', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:24 [error] [exception.CException] exception 'CException' with message 'Alias "ext.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/zenxds/php/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('ext.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:24 [error] [exception.CException] exception 'CException' with message 'Alias "ext.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/zenxds/php/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('ext.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:35 [error] [exception.CException] exception 'CException' with message 'Alias "com.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('com.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:35 [error] [exception.CException] exception 'CException' with message 'Alias "com.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('com.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:36 [error] [exception.CException] exception 'CException' with message 'Alias "com.YiiRedis.ARedisConnection" is invalid. Make sure it points to an existing directory or file.' in /home/zenxds/php/yii/framework/YiiBase.php:341
+Stack trace:
+#0 /home/zenxds/php/yii/framework/YiiBase.php(196): YiiBase::import('com.YiiRedis.AR...', true)
+#1 /home/zenxds/php/yii/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /home/zenxds/php/yii/framework/base/CModule.php(103): CModule->getComponent('redis')
+#3 /home/zenxds/php/weibo/protected/views/site/index.php(25): CModule->__get('redis')
+#4 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#5 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#6 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#7 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#8 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#9 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#16 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:55 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:56 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:36:56 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:37:37 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:37:38 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---
+2013/02/09 12:37:38 [error] [exception.CException] exception 'CException' with message 'Property "ARedisConnection.getClient" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/weibo/protected/extensions/YiiRedis/ARedisConnection.php(75): CComponent->__get('getClient')
+#1 /home/zenxds/php/weibo/protected/views/site/index.php(26): ARedisConnection->__get('getClient')
+#2 /home/zenxds/php/yii/framework/web/CBaseController.php(126): require('/home/zenxds/ph...')
+#3 /home/zenxds/php/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/zenxds/ph...', Array, true)
+#4 /home/zenxds/php/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/zenxds/ph...', Array, true)
+#5 /home/zenxds/php/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#6 /home/zenxds/php/weibo/protected/controllers/SiteController.php(40): CController->render('index', Array)
+#7 /home/zenxds/php/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#8 /home/zenxds/php/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/zenxds/php/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/zenxds/php/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zenxds/php/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#12 /home/zenxds/php/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#13 /home/zenxds/php/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/zenxds/php/weibo/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/weibo/index.php?r=site/index
+---

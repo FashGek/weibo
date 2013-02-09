@@ -21,5 +21,8 @@ should you have any questions.</p>
 
 <?php 
 $this->mustache_render('test', $test_data);
+
+Yii::app()->redis->getClient()->set("myKey", "Your Value");
+echo Yii::app()->redis->getClient()->get("myKey"); // outputs "Your Value"
 ?>
 

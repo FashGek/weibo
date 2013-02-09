@@ -67,6 +67,15 @@ return array(
             'templateExtension'=>'html',
             'extension'=>true,
         ),
+
+		"redis" => array(
+	        "class" => "ext.YiiRedis.ARedisConnection",
+	        "hostname" => "localhost",
+	        "port" => 6379,
+	        "database" => 2
+	    ),
+
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
