@@ -23,3 +23,4 @@ migrate database with yiic migrate
 
 ## extensions
 * yii-bootstrap
+* YiiRedis (依赖phpredis, 默认居然没有select database，自己添上了)
