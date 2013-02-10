@@ -7,10 +7,14 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'微博',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+
+	'language' => 'zh_cn',	# i18n
+
+	'homeUrl'=>'index.php',		// redirect to after logout
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -20,14 +24,14 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
+			'password'=>'zenxds',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -37,7 +41,7 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -46,7 +50,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
 		// 'db'=>array(
 		// 	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		// ),
@@ -60,6 +64,15 @@ return array(
 			'charset' => 'utf8',
 		),
 		
+		# Yii::app()->authManager
+		// 'authManager'=>array(
+		// 	'class'=>'CDbAuthManager',
+		// 	'connectionID'=>'db',
+		// 	'itemTable' =>'tbl_auth_item',
+		// 	'itemChildTable' =>'tbl_auth_item_child',
+		// 	'assignmentTable' =>'tbl_auth_assignment',
+		// ),
+
 		'mustache'=>array(
             'class'=>'ext.mustache.components.MustacheApplicationComponent',
             // Default settings (not needed)
@@ -101,6 +114,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'zenxds@gmail.com',
 	),
 );
