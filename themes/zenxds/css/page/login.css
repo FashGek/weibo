@@ -1,0 +1,73 @@
+.container {
+	width: 900px;
+}
+body {
+	background:#c8e1f0 url("../../img/bg/bg_repeat_reg.png")  repeat-x;
+}
+#body-wrapper {
+	background: url("../../img/bg/bg_reg.png") no-repeat center top;
+}
+#logo {
+	background: url("../../img/logo.png") no-repeat;
+}
+#logo:hover {
+	background-position: 0 0;
+}
+
+#header-wrapper {
+	padding: 10px 0;
+}
+
+.board {
+	border-bottom: 2px solid #f62638;
+	height: 200px;
+	overflow: hidden;
+}
+
+#content-wrappper {
+	margin-bottom: 105px;
+	background: #FFF;
+}
+.login-info {
+	width: 570px;
+	color: #333;
+	background: url("../../img/login_vline.png") no-repeat right 0;
+}
+.slogan {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 8px 0 8px 30px;
+	font-size: 24px;
+	font-family: "microsoft yahei","微软雅黑";
+	font-style: italic;
+	line-height: 32px;
+	margin-right: 2px;
+}
+.slogan a {
+	background: url("../../img/form_login.png") no-repeat 0 -150px;
+	width: 143px;
+	height: 30px;
+	line-height: 30px;
+	font-style: normal;
+	color: #fff;
+	display: inline-block;
+	vertical-align: 0;
+	margin-left: 24px;
+	text-align: center;
+	font-size: 22px;
+	padding: 2px 0 5px;
+}
+.slogan a:hover{
+	text-decoration:none; 
+	background-position:0 -192px;
+}
+
+.show-img{
+	padding: 10px 6px 15px 10px;
+	margin-right: 4px;
+}
+
+.form {
+	width: 250px;
+	margin: 48px auto 0;
+	padding-left: 36px;
+}

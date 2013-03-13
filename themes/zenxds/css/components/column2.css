@@ -1,0 +1,16 @@
+#content {
+	width: 600px;
+	padding: 0 340px 0 0;
+	
+}
+.col-main {
+	padding-top: 28px;
+	background: #FFF;
+}
+.col-sub {                
+	width: 340px;        
+	margin-left: -340px;        
+	position: relative;        
+	right: -340px;  
+	padding-top: 12px;
+}  

@@ -1,0 +1,13 @@
+<div class="modal fade hide" id="forward-modal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3 class="title">转发微博</h3>
+  </div>
+  <div class="modal-body">
+    <p style="text-align:right;"><span class="length-remain">还可以输入<?php echo Yii::app()->params['weiboLength']?></span>字</p>
+    <textarea class="input-detail" title="微博输入框" name="" style="margin: 1px 0px 0px; padding: 5px; font-size: 14px; font-family: Tahoma, 宋体; word-wrap: break-word; line-height: 18px; overflow-y: auto; overflow-x: hidden; outline: none;"></textarea>
+  </div>
+  <div class="modal-footer">
+    <a href="javascript:;" class="btn btn-warning weibo-submit" id="save-forward">转发</a>
+  </div>
+</div>

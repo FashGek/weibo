@@ -1,0 +1,35 @@
+#content {
+	width: 790px;
+	padding: 0 0 0 150px;
+	background: url(../../img/bg/repeat_bg_y.png) repeat-y;
+}
+.col-main {
+	padding-top: 28px;
+	background: #FFF;
+}
+.col-sub {                
+	width: 150px;        
+	margin-left: -100%;        
+	position: relative;        
+	left: -150px;  
+
+	padding-top: 12px;
+}  
+
+.left-nav .title {
+	padding-left: 20px;
+}
+.left-nav .mod {
+	margin-bottom: 3px;
+	padding: 5px;
+	padding-left: 20px;
+	background: url(../../icons/left_nav_border.png) left bottom no-repeat;
+}
+
+
+.form {
+	padding-left: 20px;
+}
+table {
+	margin-left: 20px;
+}

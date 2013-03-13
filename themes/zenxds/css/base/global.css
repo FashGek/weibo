@@ -1,0 +1,77 @@
+body {
+	padding-top: 60px;
+	color: #595959;
+}
+a, h3.title {
+	color: #3e1e1e;
+}
+a.info {
+	color: #0a8cd2;
+}
+a.info:hover {
+	color: #0a8cd2;
+	text-decoration: underline;
+}
+a:hover {
+	cursor: pointer;
+	color: #5b4120;
+	text-decoration: none;
+}
+.sl-floatcenter {
+	margin: 0;
+}
+span.required {
+	color: #900;
+}
+.help-block.error {
+	color: #F06;
+}
+.warning {
+	color: #F06;
+}
+.title {
+	font-family: \5FAE\8F6F\96C5\9ED1,tahoma,verdana,arial,sans-serif;
+}
+.content {
+	font-family: \5B8B\4F53,georgia,serif;
+}
+h3.title {
+	font-size: 18px;
+	line-height: 24px;
+	margin: 5px 0;
+}
+
+.loading, .comment-loading{
+	height: 16px;
+	background: url(../../icons/loading.gif) no-repeat 50% 50%;
+}
+
+/* bootstrap modal */
+.modal-header h3 {
+	font-size: 14px;
+	line-height: 18px;
+	color: #3e3e40;
+}
+/* end bootstrap modal */
+
+
+#logo {
+	width: 150px;
+	background: url(../../img/logo_2013cj.png);
+}
+#logo:hover {
+	background-position: 0 -39px;
+}
+
+
+/* user-trend */
+#user-trend {
+	position: fixed;
+	top: 50px;
+	right: 240px;
+}
+#trend-list {
+	padding: 5px 10px;
+	border: 1px solid #ffecb0;
+	background: #fdffd2;
+}

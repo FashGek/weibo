@@ -2,24 +2,31 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
+Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
+
+require_once(dirname(__FILE__). '/face.php');
+
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+	
 	'name'=>'微博',
+	'theme' => 'zenxds',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
 
 	'language' => 'zh_cn',	# i18n
 
-	'homeUrl'=>'index.php',		// redirect to after logout
+	'homeUrl'=>array('site/login'),		// redirect to after logout
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'ext.YiiRedis.*'
 	),
 
 	'modules'=>array(
@@ -44,10 +51,15 @@ return array(
 		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false, 
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				
+				'<action:(login|logout|about|signup|search)>' => 'site/<action>',
+				// 'home' => 'user/home', 
+				'n/<nikename:.+>'=>'n/view',
+				't/<name:.+>'=>'topic/view',
+				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/ajaxRouter',
+				// '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
 		
@@ -65,18 +77,20 @@ return array(
 		),
 		
 		# Yii::app()->authManager
-		// 'authManager'=>array(
-		// 	'class'=>'CDbAuthManager',
-		// 	'connectionID'=>'db',
-		// 	'itemTable' =>'tbl_auth_item',
-		// 	'itemChildTable' =>'tbl_auth_item_child',
-		// 	'assignmentTable' =>'tbl_auth_assignment',
-		// ),
+		'authManager'=>array(
+			'class'           => 'CDbAuthManager',
+			'connectionID'    => 'db',
+			'defaultRoles'    => array('authenticated', 'owner'),
+			
+			'itemTable'       => 'auth_item',
+			'itemChildTable'  => 'auth_item_child',
+			'assignmentTable' => 'auth_assignment',
+		),
 
 		'mustache'=>array(
             'class'=>'ext.mustache.components.MustacheApplicationComponent',
             // Default settings (not needed)
-            'templatePathAlias'=>'application.templates',
+            'templatePathAlias'=>'application.components.templates',
             'templateExtension'=>'html',
             'extension'=>true,
         ),
@@ -88,7 +102,10 @@ return array(
 	        "database" => 2
 	    ),
 
-
+		'bootstrap'=>array(
+            'class'=>'bootstrap.components.Bootstrap',
+        ),
+        
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
@@ -115,5 +132,10 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'zenxds@gmail.com',
+		'defaultGroups' => array('名人明星', '同学', '同事', '朋友', '其他'),
+		'weiboLength' => 140,
+		'faces' => $faceMap,
+
+		'weiboPerPage'=> 3,
 	),
 );

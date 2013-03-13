@@ -992,3 +992,168 @@ REQUEST_URI=/weibo/index.php?r=site/index
 in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (79)
 in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (57)
 in /home/zenxds/php/weibo/protected/extensions/mustache/components/MustacheApplicationComponent.php (29)
+2013/02/10 16:53:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'weibo.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2013/02/17 17:52:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1068 Multiple primary key defined. The SQL statement executed was: CREATE TABLE `group_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`group_id` int(11),
+	`user_id` int(11),
+	PRIMARY KEY (`group_id`,`user_id`)
+) ENGINE=InnoDB.
+2013/02/17 17:52:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1068 Multiple primary key defined. The SQL statement executed was: CREATE TABLE `group_user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`group_id` int(11),
+	`user_id` int(11),
+	PRIMARY KEY (`group_id`,`user_id`)
+) ENGINE=InnoDB' in /home/zenxds/php/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /home/zenxds/php/yii/framework/db/CDbCommand.php(1321): CDbCommand->execute()
+#1 /home/zenxds/php/yii/framework/db/CDbMigration.php(228): CDbCommand->createTable('group_user', Array, 'ENGINE=InnoDB')
+#2 /home/zenxds/php/weibo/protected/migrations/m130211_100539_user_group.php(29): CDbMigration->createTable('group_user', Array, 'ENGINE=InnoDB')
+#3 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(385): m130211_100539_user_group->up()
+#4 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m130211_100539_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#8 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#9 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#10 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#12 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#13 {main}
+---
+2013/02/17 17:53:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'follow' already exists. The SQL statement executed was: CREATE TABLE `follow` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`follower` int(11),
+	`followed` int(11),
+	`remark` char(30) DEFAULT NULL,
+	`dateline` datetime DEFAULT NULL
+) ENGINE=InnoDB.
+2013/02/17 17:53:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'follow' already exists. The SQL statement executed was: CREATE TABLE `follow` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`follower` int(11),
+	`followed` int(11),
+	`remark` char(30) DEFAULT NULL,
+	`dateline` datetime DEFAULT NULL
+) ENGINE=InnoDB' in /home/zenxds/php/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /home/zenxds/php/yii/framework/db/CDbCommand.php(1321): CDbCommand->execute()
+#1 /home/zenxds/php/yii/framework/db/CDbMigration.php(228): CDbCommand->createTable('follow', Array, 'ENGINE=InnoDB')
+#2 /home/zenxds/php/weibo/protected/migrations/m130211_100539_user_group.php(13): CDbMigration->createTable('follow', Array, 'ENGINE=InnoDB')
+#3 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(385): m130211_100539_user_group->up()
+#4 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m130211_100539_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#8 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#9 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#10 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#12 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#13 {main}
+---
+2013/02/19 15:56:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width`' at line 3. The SQL statement executed was: CREATE TABLE `media` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`url` varchar(255) DEFAULT NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width` varchar(15) DEFAULT NUL,
+	`height` varchar(15) DEFAULT NUL
+) ENGINE=InnoDB.
+2013/02/19 15:56:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width`' at line 3. The SQL statement executed was: CREATE TABLE `media` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`url` varchar(255) DEFAULT NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width` varchar(15) DEFAULT NUL,
+	`height` varchar(15) DEFAULT NUL
+) ENGINE=InnoDB' in /home/zenxds/php/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /home/zenxds/php/yii/framework/db/CDbCommand.php(1321): CDbCommand->execute()
+#1 /home/zenxds/php/yii/framework/db/CDbMigration.php(228): CDbCommand->createTable('media', Array, 'ENGINE=InnoDB')
+#2 /home/zenxds/php/weibo/protected/migrations/m130219_074048_weibo.php(14): CDbMigration->createTable('media', Array, 'ENGINE=InnoDB')
+#3 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(385): m130219_074048_weibo->up()
+#4 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m130219_074048_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#8 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#9 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#10 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#12 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#13 {main}
+---
+2013/02/19 15:58:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width`' at line 3. The SQL statement executed was: CREATE TABLE `media` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`url` varchar(255) DEFAULT NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width` varchar(15) DEFAULT NUL,
+	`height` varchar(15) DEFAULT NUL
+) ENGINE=InnoDB.
+2013/02/19 15:58:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width`' at line 3. The SQL statement executed was: CREATE TABLE `media` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`url` varchar(255) DEFAULT NUL,
+	`name` varchar(255) DEFAULT NUL,
+	`description` text DEFAULT NUL,
+	`width` varchar(15) DEFAULT NUL,
+	`height` varchar(15) DEFAULT NUL
+) ENGINE=InnoDB' in /home/zenxds/php/yii/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /home/zenxds/php/yii/framework/db/CDbCommand.php(1321): CDbCommand->execute()
+#1 /home/zenxds/php/yii/framework/db/CDbMigration.php(228): CDbCommand->createTable('media', Array, 'ENGINE=InnoDB')
+#2 /home/zenxds/php/weibo/protected/migrations/m130219_074048_weibo.php(14): CDbMigration->createTable('media', Array, 'ENGINE=InnoDB')
+#3 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(385): m130219_074048_weibo->up()
+#4 /home/zenxds/php/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m130219_074048_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#8 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#9 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#10 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#12 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#13 {main}
+---
+2013/02/27 10:56:38 [error] [exception.CException] exception 'CException' with message 'Property "CConsoleApplication.authManager" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/yii/framework/base/CModule.php(105): CComponent->__get('authManager')
+#1 /home/zenxds/php/weibo/protected/commands/RbacCommand.php(70): CModule->__get('authManager')
+#2 /home/zenxds/php/weibo/protected/commands/RbacCommand.php(23): RbacCommand->ensureAuthManagerDefined()
+#3 [internal function]: RbacCommand->actionIndex()
+#4 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(RbacCommand), Array)
+#5 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#7 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#8 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#9 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#10 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#11 {main}
+---
+2013/02/27 10:58:23 [error] [exception.CException] exception 'CException' with message 'Property "CConsoleApplication.authManager" is not defined.' in /home/zenxds/php/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/zenxds/php/yii/framework/base/CModule.php(105): CComponent->__get('authManager')
+#1 /home/zenxds/php/weibo/protected/commands/RbacCommand.php(70): CModule->__get('authManager')
+#2 /home/zenxds/php/weibo/protected/commands/RbacCommand.php(23): RbacCommand->ensureAuthManagerDefined()
+#3 [internal function]: RbacCommand->actionIndex()
+#4 /home/zenxds/php/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(RbacCommand), Array)
+#5 /home/zenxds/php/yii/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#6 /home/zenxds/php/yii/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#7 /home/zenxds/php/yii/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#8 /home/zenxds/php/yii/framework/yiic.php(33): CApplication->run()
+#9 /home/zenxds/php/weibo/protected/yiic.php(7): require_once('/home/zenxds/ph...')
+#10 /home/zenxds/php/weibo/protected/yiic(4): require_once('/home/zenxds/ph...')
+#11 {main}
+---

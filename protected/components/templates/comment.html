@@ -1,0 +1,17 @@
+ 
+<script id="comment-tpl" type="text/template">
+<div class="avatar fn-left">
+    <a href="{{ userUrl }}">
+    	<img src="{{ avatarUrl }}" alt="avatar" style="width:30px; height: 30px;">
+    </a>
+</div>
+<div class="fn-bfc">
+    <div class="comment-content"><a href="{{ userUrl }}" class="title">{{ nikename }}</a>: {{{ processContent }}} ({{ humanDateline }})</div>
+    <div class="comment-actions">
+        <a href="javascript:;" class="fn-inline reply">回复</a>
+        {{#isMe}}
+        <a href="javascript:;" class="fn-inline deleteWeibo">删除</a>
+        {{/isMe}}
+    </div>
+</div>
+</script>

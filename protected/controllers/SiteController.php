@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+	public $defaultAction = 'login';
 	/**
 	 * Declares class-based actions.
 	 */
@@ -33,6 +34,7 @@ class SiteController extends Controller
 		    "taxed_value" => 10000 - (10000 * 0.4),
 		    "in_ca" => true
 		);
+
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index', array(
@@ -51,6 +53,15 @@ class SiteController extends Controller
 				echo $error['message'];
 			else
 				$this->render('error', $error);
+		}
+	}
+
+	public function actionTest()
+	{
+		$content = '#abc#';
+		$topics = Weibo::model()->getTopicsFromContent($content);
+		foreach ($topics as $key => $value) {
+			echo $value->id;
 		}
 	}
 
@@ -85,6 +96,12 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
+		if(!Yii::app()->user->isGuest)
+		{
+			$homepage = $this->createUrl('user/home', array('id'=>Yii::app()->user->id));
+			$this->redirect($homepage);
+		}
+
 		$model=new LoginForm;
 
 		// if it is ajax validation request
@@ -102,8 +119,12 @@ class SiteController extends Controller
 			if($model->validate() && $model->login())
 				$this->redirect(Yii::app()->user->returnUrl);
 		}
+
 		// display the login form
-		$this->render('login',array('model'=>$model));
+		$this->renderPartial('login',array(
+			'model'=>$model,
+			'title'=>'登陆',
+		));
 	}
 
 	/**
@@ -113,5 +134,59 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	public function actionSignup()
+	{
+		if(!Yii::app()->user->isGuest)
+		{
+			$this->redirect(Yii::app()->homeUrl);
+		}
+		$model=new User;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['User']))
+		{
+			$model->attributes=$_POST['User'];
+			if($model->save()){
+				$model->addDefaultGroups();
+				$model->addProfile();
+				
+				$password = $_POST['User']['password'];
+
+				// login
+				$identity = new UserIdentity($model->username, $password);
+				$identity->authenticate();
+    			Yii::app()->user->login($identity, 3600*24*30);
+
+				$this->redirect(Yii::app()->homeUrl);
+			}
+		}
+
+		$this->renderPartial('signup',array(
+			'model'=>$model,
+			'title'=>'注册',
+		));
+	}
+
+	// keyword
+	public function actionSearch($k)
+	{
+		$user = new User('search');
+		$user->unsetAttributes();
+		$user->nikename = $k;
+		
+		$weibo = new Weibo('search');
+		$weibo->unsetAttributes();
+		$weibo->content = $k;
+		// $keywords = explode(' ', $k));
+
+		$this->renderPartial('search', array(
+			'title' => '搜索',
+			'user' => $user,
+			'weibo' => $weibo
+		));
 	}
 }

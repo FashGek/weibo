@@ -1,0 +1,55 @@
+ 
+<script id="weibo-tpl" type="text/template">
+<div class="avatar fn-left">
+    <a href="{{ userUrl }}"><img src="{{ avatarUrl }}" alt="avatar"></a>
+</div>
+<div class="fn-bfc">
+    <div class="info">
+        <a href="{{ userUrl }}" class="title">{{ nikename }}</a>      
+    </div>
+    <div class="weibo-content">
+        <div class="weibo-text">{{{ processContent }}}</div> 
+        {{#root}}
+        <div class="sub-weibo fn-clear">
+            <div class="info">
+                <a href="{{ userUrl }}" class="title">@{{ nikename }}</a>      
+            </div>
+            <div class="weibo-content">
+                <div class="weibo-text">{{{ content }}}</div>  
+            </div>
+            <div class="image-area small">
+                <a href="javascript:;"><img src="{{ image_url }}" alt=""></a>
+            </div>
+            <div class="footer fn-clear">
+                <div class="fn-left">{{ rootHumanDateline }}</div>
+                <div class="fn-right weibo-actions fn-list">
+                    <a href="{{ url }}" class="fn-inline">转发({{ forwardCount }})</a>
+                    <a href="{{ url }}" class="fn-inline">评论({{ commentCount }})</a>
+                </div>
+            </div>
+        </div> 
+        {{/root}}    
+    </div>
+    {{^root_id}}
+    <div class="image-area small">
+        <a href="javascript:;"><img src="{{ image_url }}" alt=""></a>
+    </div>
+    {{/root_id}}
+
+    <div class="footer fn-clear">
+        <div class="fn-left">{{ humanDateline }}</div>
+        <div class="fn-right weibo-actions fn-list">
+            <a href="javascript:;" class="fn-inline forward">转发({{ forwardCount }})</a>
+            <a href="javascript:;" class="fn-inline collect">{{#isCollect}}取消收藏{{/isCollect}}{{^isCollect}}收藏{{/isCollect}}</a>
+            <a href="javascript:;" class="fn-inline comment">评论({{ commentCount }})</a>
+            {{#isMe}}
+            <a href="javascript:;" class="fn-inline delete">删除</a>
+            {{/isMe}}
+        </div>
+    </div>
+    <div class="comment-area fn-hide">
+        <div class="comment-loading fn-hide"></div>
+        <div class="comment-list"></div>
+    </div>
+</div>
+</script>

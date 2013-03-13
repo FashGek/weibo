@@ -1,0 +1,13 @@
+<script id="trend-tpl" type="text/template">
+<ul id="trend-list" class="unstyled">
+	{{#atCount}}
+	<li><a href="{{atUrl}}">{{atCount}}条新@我</a></li>
+	{{/atCount}}
+	{{#commentCount}}
+	<li><a href="{{commentUrl}}">{{commentCount}}条新评论</a></li>
+	{{/commentCount}}
+	{{#pmCount}}
+	<li><a href="{{pmUrl}}">{{pmCount}}条新私信</a></li>
+	{{/pmCount}}
+</ul>
+</script>

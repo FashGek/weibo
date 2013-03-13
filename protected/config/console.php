@@ -33,5 +33,15 @@ return array(
 				),
 			),
 		),
+
+		'authManager'=>array(
+			'class'           => 'CDbAuthManager',
+			'connectionID'    => 'db',
+			'defaultRoles'    => array('authenticated', 'owner'),
+			
+			'itemTable'       => 'auth_item',
+			'itemChildTable'  => 'auth_item_child',
+			'assignmentTable' => 'auth_assignment',
+		),
 	),
 );

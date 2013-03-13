@@ -1,0 +1,272 @@
+body {
+	background: url(../../img/bg/bg_home.gif);
+}
+
+
+/*-----------------------icons----------------*/
+.weibo-icon {
+	display: inline-block;
+	background: url(../../icons/icon.png);
+}
+.icon16 {
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	-webkit-text-size-adjust: none;
+	margin: 7px 10px 0 0;
+	width: 25px;
+	text-align: center;
+	height: 20px;
+}
+.icon20 {
+	width: 20px;
+	height: 20px;
+	line-height: 38px;
+	margin-right: 10px;
+	vertical-align: -4px;
+}
+.current .icon20 {
+	background-color: #fafafa;
+}
+
+.icon-face {
+	width: 20px;
+	background-position: -275px 2px;
+}
+.icon-img {
+	background-position: -270px -23px;
+}
+.icon-movie {
+	background-position: -270px -48px;
+}
+.icon-music {
+	background-position: -270px -73px;
+}
+.icon-qing {
+	background-position: -270px -98px;
+}
+
+.icon-myhomepage{
+	background-position: 0 -25px;
+}
+.current .icon-myhomepage {
+	background-position: -25px -25px;
+}
+.icon-mentionedmy {
+	background-position: 0 -49px;
+}
+.current .icon-mentionedmy {
+	background-position: -25px -49px;
+}
+.icon-mycomments {
+	background-position: 0 -74px;
+}
+.current .icon-mycomments {
+	background-position: -25px -74px;
+}
+.icon-personletter {
+	background-position: 0 -99px;
+}
+.current .icon-personletter {
+	background-position: -25px -99px;
+}
+
+.icon-favor {
+	background-position: 0 -124px;
+}
+.current .icon-favor {
+	background-position: -25px -124px;
+}
+.icon-group {
+	background-position: 0 -175px;
+}
+.current .icon-group{
+	background-position: -25px -175px;
+}
+/*---------------------end icons ------------*/
+
+
+#content {
+	width: 600px;
+	padding: 0 190px 0 150px;
+	background: url(../../img/bg/repeat_bg_y.png) repeat-y;
+}
+.col-main {
+	padding-top: 28px;
+}
+.col-sub {               
+	width: 150px;        
+	margin-left: -100%;        
+	position: relative;        
+	left: -150px;  
+
+	padding-top: 12px;
+}  
+.col-extra {               
+	width: 190px;        
+	margin-left: -190px;        
+	position: relative;        
+	right: -190px;  
+}
+.col-extra .inner {
+	padding: 20px;
+}
+
+/* sidebar */
+.col-sub .item a{
+	display: block;
+	padding: 0 0 0 20px;
+	text-decoration: none;
+	overflow: hidden;
+	height: 35px;
+	line-height: 38px;
+	color: #595959;
+}
+.col-sub .item a:hover {
+	color: #333;
+	background-color: #dbc4a5;
+}
+.col-sub .item a.current {
+	background-color: #FFF;
+}
+
+
+/* main */
+#publisher, .items-area {
+	padding-left: 20px;
+	position: relative;
+}
+#publisher .header {
+	position: relative;
+}
+#publisher .header p{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#publisher .title {
+	width: 225px;
+	height: 22px;
+	background: url(../../icons/all_iconbtn.png) 0 -275px;
+}
+#length-remain {
+	font-size: 20px;
+}
+
+.input-box {
+
+}
+.input-detail, .comment-detail {
+	width: 95%;
+	height: 75px;
+}
+
+.sub-content-area {
+	position: absolute;
+	top: 150px;
+	left: 20px;
+	z-index: 150;
+	background: #FFF;
+}
+.sub-content-area .close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+	background: url(../../icons/icon.png) no-repeat -75px -200px;
+}
+.sub-content-area.active .close {
+	opacity: 1;
+}
+.sub-content-area .nav {
+	margin-bottom: 5px;
+}
+.sub-content-area .nav > li > a {
+ 	height: 20px;
+ 	padding: 5px;
+}
+
+.face-item {
+	padding: 3px;
+}
+
+/* weibo_area */
+.items-area a.title {
+	color: #3e1e1e;
+}
+.weibo-item .avatar img {
+	width: 50px;
+	height: 50px;
+}
+.weibo-item .avatar {
+	margin-right: 15px;
+}
+.weibo-item {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 20px 0 11px;
+}
+.weibo-item .info .title {
+	font-size: 16px;
+}
+.weibo-content {
+	padding: 5px 0;
+}
+
+.weibo-actions a {
+	margin: 0 5px;
+	padding: 0 5px;
+}
+
+.weibo-text {
+	padding: 4px 0;
+}
+.sub-weibo {
+	border: 1px solid #e8dcc8;
+	padding: 10px 20px 10px;
+	margin: 5px 5px 15px 0;
+	border-radius: 3px;
+}
+
+/* comment */
+.comment-area {
+	padding: 10px 5px;
+	border: 1px solid #e8dcc8;
+	margin: 5px;
+}
+.comment-actions {
+	text-align: right;
+}
+.comment-item {
+	border-bottom: 1px dotted #e6e6e6;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+.commoned-list .checkbox {
+	margin-top: 0; /* reset bootstrap */
+}
+
+/* image-area */
+.image-area.small img{
+	width: 120px;
+}
+
+/* ------------right side */
+.user-info .avatar {
+	margin-right: 10px;
+}
+.user-info .info {
+	padding-top: 10px;
+}
+
+.count-msg .sl-floatcenter {
+	margin-top: 5px;
+}
+.sl-floatcenter-item {
+	width: 35px;
+}
+.sl-floatcenter-item strong {
+	display: block;
+}

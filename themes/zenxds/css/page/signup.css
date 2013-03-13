@@ -1,0 +1,28 @@
+body {
+	background:#c8e1f0 url("../../img/bg/bg_repeat_reg.png")  repeat-x;
+}
+#body-wrapper {
+	background: url("../../img/bg/bg_reg.png") no-repeat center top;
+}
+#logo {
+	background: url("../../img/logo.png") no-repeat;
+}
+#logo:hover {
+	background-position: 0 0;
+}
+
+#header-wrapper {
+	padding: 10px 0;
+}
+
+#content-wrappper {
+	border-top: 2px solid #f62638;
+	padding: 40px 20px;
+	margin-bottom: 105px;
+	background: #FFF;
+}
+
+
+#signup-box {
+	width: 600px;
+}

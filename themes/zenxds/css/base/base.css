@@ -1,0 +1,213 @@
+@charset "utf-8";
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font: 14px/20px tahoma, arial, \5b8b\4f53, sans-serif;
+}
+
+/* for chrome */
+input,
+button,
+select,
+textarea {
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+img {
+	max-width: none;
+}
+/*-----------------------end reset------------------------*/
+
+/* ---------------------------taobao ----------------------*/
+.col-main {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+}
+.col-sub,
+.col-extra {
+  float: left;
+}
+.layout,
+.main-wrap,
+.col-sub,
+.col-extra {
+  *zoom: 1;
+}
+.layout:before,
+.main-wrap:before,
+.col-sub:before,
+.col-extra:before,
+.layout:after,
+.main-wrap:after,
+.col-sub:after,
+.col-extra:after {
+  display: table;
+  content: "";
+}
+.layout:after,
+.main-wrap:after,
+.col-sub:after,
+.col-extra:after {
+  clear: both;
+}
+/* ----------------------------end taobao ------------------*/
+
+
+/* 清理浮动 */
+.fn-clear:after {
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:" ";
+	clear:both;
+	height:0;
+}
+.fn-clear {
+	zoom:1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn-hide {
+	display:none;
+}
+body .fn-block {
+	display: block;
+}
+body .fn-invisible {
+	visibility: hidden;
+}
+/* 设置内联, 减少浮动带来的bug */
+.fn-left, .fn-right {
+	*display:inline;
+}
+.fn-left {
+	float:left;
+}
+.fn-right {
+	float:right;
+}
+
+.fn-list {
+	font-size: 0;
+	*word-spacing: -1px;	/* IE6、7 */
+}
+.fn-list .fn-inline {
+	font-size: 12px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+	.fn-list {
+		letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+	}
+}
+.fn-inline {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.fn-bfc {
+	overflow: hidden;
+	*zoom: 1;
+}
+
+/*-------------------------------end fn----------------------------*/
+
+/*-------------------------------solition----------------------------*/
+.sl-hide-text {
+	text-indent: -9999px;
+　　*text-indent: 0;
+　　font-size: 0;
+　　line-height: 0;
+}
+
+/* ------------------------------------IE6 position fix-----------------*/
+/*
+ user case: div.sl-fixed.sl-fixed-top.sl-fixed-left
+ @ 注意:
+          * 如果需要多个方向的固定位置，比如 top + right，需要加两个 class
+          * 如果加了.sl-fixed-top, 那么就别给这个元素加 top 属性的值
+          * 为了不出现异常，这个只作为套用。比如要top:30px 的时候，请在 .sl-fixed-top 的子元素内设置
+          * 改solution是可以的，但这是强烈不推荐的，因为不利于维护
+*/
+.sl-fixed{
+    position:fixed;
+}
+
+/* 相当于正常的 position:fixed; top:0;  */
+.sl-fixed-top {
+	bottom:auto;
+	top:0;
+}
+
+/* 相当于正常的 position:fixed;bottom:0px; */
+.sl-fixed-bottom {
+	bottom:0;
+	top:auto;
+}
+
+/* 相当于正常的 position:fixed;left:0px; */
+.sl-fixed-left {
+	left:0;
+	right:auto;
+}
+
+/* 相当于正常的 position:fixed;right:0; */
+.sl-fixed-right {
+	right:0;
+	left:auto;
+}
+
+
+/*
+		<ul class="sl-floatcenter clearfix">
+			<li class="sl-floatcenter-item">item1</li>
+			<li class="sl-floatcenter-item">item2</li>
+			<li class="sl-floatcenter-item">item3</li>
+		</ul>
+
+*/
+.sl-floatcenter{
+    display:block;text-align:center;
+
+    /* 解决间隙问题 */
+    font-size:0;
+}
+.sl-floatcenter-item{
+    display:inline-block;*display:inline;*zoom:1;
+
+    /* 解决不能水平对齐问题 */
+    vertical-align:top;
+
+    /* 解决间隙问题后遗症解决 */
+    font-size:12px;
+}
+
+/*
+ * 水平垂直居中, 外层box宽高固定
+ */
+.sl-hvalign{
+	display:table;
+	overflow:hidden;
+	margin:0 auto;
+	height: 100%;
+}
+.sl-hvalign-cnt{
+	display:table-cell;
+	vertical-align: middle;
+	top:50%;
+}
+
+

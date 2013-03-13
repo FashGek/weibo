@@ -1,0 +1,19 @@
+#profile-area, #home-content {
+	background: #FFF;
+}
+.user-profile {
+	padding-top: 100px;
+}
+
+#items-wrapper {
+	width: 600px;
+	margin-right: 10px;
+}
+
+.avatar-item {
+	width: 64px;
+}
+.avatar-item img {
+	width: 60px;
+	height: 60px;
+}
