@@ -55,9 +55,18 @@ define(function(require, exports, module) {
 
         transDate = function(date) {
             date = date || new Date();
-            if (typeof date == 'string' || 'number'){
-                date = new Date(date); 
+            
+            if (typeof date == 'string'){
+                date = date.replace('-', '/').replace('-', '/');    // for firefox
+                // if (typeof +date.charAt(0) != 'number') {
+                date = new Date(date);
+                // } else {
+                //     date = new Date(Date.parse(date)); 
+                // }
+            } else {
+                date = new Date(date);
             }
+            
             var now = new Date(),
                 suf = ' H:i';
             var diffMinute = (now - date) / 60000,

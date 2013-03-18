@@ -76,8 +76,9 @@ $(function() {
             		this.$el.html(this.template(this.model.toJSON()));
                 	this.$el.fadeIn();
             	}
-            	if (this.model.get('weiboCount') && Config.page == "mine") {
+            	if (this.model.get('weiboCount')) {
                     var countTemplate = mustache.compile($('#weibo-count-tpl').html());
+                    console.log('a');
                     $('#new-weibo-count').html(countTemplate({
                         weiboCount: this.model.get('weiboCount')
                     }));

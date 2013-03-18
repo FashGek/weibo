@@ -30,9 +30,9 @@
 <div id="body-wrapper">
     <div class="container" id="content">
         <div class="col-main">
-            <div id="weibo-area-wrapper">
+            <div id="items-wrapper">
                 <div class="loading"></div>
-                <div class="weibo-area">
+                <div class="items-area">
                 </div>
             </div>
         </div>        
@@ -45,6 +45,7 @@
 <script src="<?php echo Yii::app()->theme->baseUrl ?>/js/config.js"></script>
 <script>
 seajs.use('init.js');
+seajs.use('page/mine.js');
 </script>
 
 <script id="face-tpl" type="text/template">

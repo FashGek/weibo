@@ -56,6 +56,7 @@
             </div>
             <div id="items-wrapper">
                 <div class="loading fn-hide"></div>
+                <div id="new-weibo-count"></div>
                 <div class="items-area">
                 </div>
             </div>
